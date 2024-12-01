@@ -7,6 +7,19 @@ import './style.css'
 - Muestra esos nuevos valores por la consola.
 */
 
+let nombre = 'Matias Gabriel'
+let apellido = 'Casiba'
+let edad = '22'
+edad = Number(edad)
+let pais = 'Argentino'
+console.log(` Nombre: ${nombre} ${apellido}\n Edad: ${edad}\n Nacionalidad: ${pais}`)
+let arrayConocimiento = ['javaScript', ' Java',' Python', ' HTML', ' CSS']
+console.log(`Conocimientos: ${arrayConocimiento}`)
+let nuevoConocimiento = ' C # '
+arrayConocimiento.push(nuevoConocimiento)
+console.log(`Conocimiento actualizado: ${arrayConocimiento} `)
+
+
 /* 2. Debes crear las variables marca, velocidad, stock y modelos (array)
 - Todas esas variables deberán ser mostradas por pantalla (con una frase) [Usar template strings]
 - Debes mostrar cada uno de los elementos del array (sin hacerlo manualmente) */
