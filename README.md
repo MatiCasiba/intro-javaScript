@@ -67,4 +67,19 @@ if (sueldo <= 40000){
     console.log(`Tu sueldo de $${sueldo}, es excelente`);
 }
 ```
-* Nota: <= es menor o igual, osea que si sueldo es menor o igual a tal monto, devuelve un mensaje. 
+* Nota: <= es menor o igual, osea que si sueldo es menor o igual a tal monto, devuelve un mensaje.
+
+## Ejercicio 5 
+Se pido crear un programa que calcule la cantidad de años que tienes (osea tu edad), para cumplir con lo pedido, lo hice de la siguiente forma:
+````sh
+let year = 2024 # año actual
+let yearOfBirth = Number(prompt('Ingrese su año de nacimiento:')) # el usuario ingresará el año en que nació
+let calculadorDeEdad = year - yearOfBirth # entonces restaremos al año actual menos el año ingresado.
+
+# creo una condición para que el usuario no ingrese un año mayor al 2024, si cumple con lo pedido, le calculará su edad
+if (yearOfBirth > year){
+    console.log(`El año ${yearOfBirth} que ingresaste, no es válida ya que estamos en 2024, ingrese otro año.`);
+}else{
+    console.log(`Tu edad es de ${calculadorDeEdad} años`);
+}
+```

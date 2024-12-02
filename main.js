@@ -51,7 +51,7 @@ let velociadLimite = 60
 if (velocidadEnLaQueIbas > velociadLimite){
     console.log(` ¡Has exedido el límite de velocidad!\n la velocidad límite es de ${velociadLimite} km/h\n tu velocidad es de ${velocidadEnLaQueIbas} km/h, baje la velocidad`);
 }else{
-    console.log(`Tu velocidad es de ${velocidadEnLaQueIbas} km/h, es ideal.`);
+    console.log(`Tu velocidad es de ${velocidadEnLaQueIbas} km/h, es ideal.`)
 }
 
 /* 4. Dado un sueldo, crear una condicional comparando su sueldo.
@@ -64,16 +64,27 @@ console.log('---------------------------------------------------------------')
 
 let sueldo = Number(prompt('Ingrese su sueldo:'))
 if (sueldo <= 40000){
-    console.log(`Tu sueldo de $${sueldo}, es bajo`);
+    console.log(`Tu sueldo de $${sueldo}, es bajo`)
 }else if (sueldo <= 60000){
-    console.log(`Tu sueldo de $${sueldo}, es bueno`);
+    console.log(`Tu sueldo de $${sueldo}, es bueno`)
 }else if (sueldo <= 80000){
-    console.log(`Tu sueldo de $${sueldo}, es muy bueno`);
+    console.log(`Tu sueldo de $${sueldo}, es muy bueno`)
 }else{
-    console.log(`Tu sueldo de $${sueldo}, es excelente`);
+    console.log(`Tu sueldo de $${sueldo}, es excelente`)
 }
 
 /* 5. Pidele al usuario su año de Nacimiento (ej: 1990) en una ventana emergente (prompt) y calcula cuántos años tiene actualmente. */
+console.log('---------------------------------------------------------------')
+console.log('---------------------------------------------------------------')
+
+let year = 2024
+let yearOfBirth = Number(prompt('Ingrese su año de nacimiento:'))
+let calculadorDeEdad = year - yearOfBirth
+if (yearOfBirth > year){
+    console.log(`El año ${yearOfBirth} que ingresaste, no es válida ya que estamos en 2024, ingrese otro año.`);
+}else{
+    console.log(`Tu edad es de ${calculadorDeEdad} años`);
+}
 
 /* 6. Crear una función en JavaScript que reciba como parámetro un número entero. Calcule y muestre en la consola la tabla de multiplicar de ese número desde 1 hasta 10.*/
 
