@@ -19,10 +19,25 @@ let nuevoConocimiento = ' C # '
 arrayConocimiento.push(nuevoConocimiento)
 console.log(`Conocimiento actualizado: ${arrayConocimiento} `)
 
-
 /* 2. Debes crear las variables marca, velocidad, stock y modelos (array)
 - Todas esas variables deberán ser mostradas por pantalla (con una frase) [Usar template strings]
 - Debes mostrar cada uno de los elementos del array (sin hacerlo manualmente) */
+
+console.log('---------------------------------------------------------------')
+console.log('---------------------------------------------------------------')
+
+let marca = 'Audi'
+let velocidad = '324'
+velocidad = Number(velocidad)
+let stock = true
+console.log(` Marca de auto: ${marca}\n Velocidad: ${velocidad} km/h\n ¿Se encuentra disponible?: ${stock}`)
+console.log('Esto son los modelos que se encuentran disponibles:')
+let arrayModelos = ['A1 Sportback', 'A3 Sedán', 'A5 Coupé', 'Q2', 'Q5 Sportback', 'RS e-tron GT']
+console.log('Los modelos disponibles son:')
+// muestro en consola los modelos, de manera ordenada
+arrayModelos.forEach(function(models, indice){
+    console.log(`${indice+1}) ${models}`)
+})
 
 /* 3. Un coche va a toda velocidad por la carretera. Va a una velocidad de 135km/h y el limite es de 60km/h
 - Comprueba que si la velocidad es mayor al limite.
