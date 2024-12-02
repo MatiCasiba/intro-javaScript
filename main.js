@@ -59,6 +59,19 @@ if (velocidadEnLaQueIbas > velociadLimite){
 - Si el sueldo es menor o igual a $80.000 es muy bueno.
 - Si el sueldo es menor o igual a $60.000 es bueno.
 - Y si el sueldo es menor o igual a $40.000 es bajo. */
+console.log('---------------------------------------------------------------')
+console.log('---------------------------------------------------------------')
+
+let sueldo = Number(prompt('Ingrese su sueldo:'))
+if (sueldo <= 40000){
+    console.log(`Tu sueldo de $${sueldo}, es bajo`);
+}else if (sueldo <= 60000){
+    console.log(`Tu sueldo de $${sueldo}, es bueno`);
+}else if (sueldo <= 80000){
+    console.log(`Tu sueldo de $${sueldo}, es muy bueno`);
+}else{
+    console.log(`Tu sueldo de $${sueldo}, es excelente`);
+}
 
 /* 5. Pidele al usuario su año de Nacimiento (ej: 1990) en una ventana emergente (prompt) y calcula cuántos años tiene actualmente. */
 

@@ -52,3 +52,19 @@ if (velocidadEnLaQueIbas > velociadLimite){ # si la velocidad en la que andas es
     console.log(`Tu velocidad es de ${velocidadEnLaQueIbas} km/h, es ideal.`);
 }
 ```
+
+## Ejercicio 4
+Se pidio crear un programa para medir el sueldo, si es de 100k  es excelente, si es menor o igual a 80k es muy bueno, si es menor o igual a 60k es bueno, sino, si es menor o igual a 40k es bajo. Para hacerlo, primero comencé con el sueldo bajo, usando condicionales if y else:
+```sh
+let sueldo = Number(prompt('Ingrese su sueldo:'))
+if (sueldo <= 40000){
+    console.log(`Tu sueldo de $${sueldo}, es bajo`);
+}else if (sueldo <= 60000){
+    console.log(`Tu sueldo de $${sueldo}, es bueno`);
+}else if (sueldo <= 80000){
+    console.log(`Tu sueldo de $${sueldo}, es muy bueno`);
+}else{
+    console.log(`Tu sueldo de $${sueldo}, es excelente`);
+}
+```
+* Nota: <= es menor o igual, osea que si sueldo es menor o igual a tal monto, devuelve un mensaje. 
