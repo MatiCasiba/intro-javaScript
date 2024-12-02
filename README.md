@@ -40,3 +40,15 @@ modelos.forEach(function(models, indice){
 ```
 Con forEach voy a lograr mostrár las posiciones de los elementos y los elementos (con models y indice)dentro del array:
 * console.log(`${indice+1}) ${models}`): indice+1 lo que hará es mostrar en consola que la posición arranca desde 1, sin el +1, arrancaría de 0.
+
+## Ejercicio 3
+Se pidió que se cree un programa para el exceso de velocidad, una persona va por la carretera a una velocidad de 135 km/h y el límite es de 60 km/h, si se excede, hay que mostrar un mensaje que baje la velocidad, en el caso contrario, le debemos indicar que va a una velocidad ideal. Lo hice de la siguiente manera:
+```sh
+let velocidadEnLaQueIbas = 135
+let velociadLimite = 60 # cree una variable con el propósito de si hay que aumentar o bajar la velocidad limite
+if (velocidadEnLaQueIbas > velociadLimite){ # si la velocidad en la que andas es mayor a la indicada, se te advertirá de que bajes la velocidad
+    console.log(` ¡Has exedido el límite de velocidad!\n la velocidad límite es de ${velociadLimite} km/h\n tu velocidad es de ${velocidadEnLaQueIbas} km/h, baje la velocidad`);
+}else{ # si la velocidad es menor a la limite, no se te dirá que irás bien
+    console.log(`Tu velocidad es de ${velocidadEnLaQueIbas} km/h, es ideal.`);
+}
+```

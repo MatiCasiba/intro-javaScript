@@ -43,6 +43,16 @@ arrayModelos.forEach(function(models, indice){
 - Comprueba que si la velocidad es mayor al limite.
 - Si es mayor debes mostrar un mensaje por la consola indicando que baje la velocidad.
 - Si es menor el mensaje deberá ser que todo va bien. */
+console.log('---------------------------------------------------------------')
+console.log('---------------------------------------------------------------')
+
+let velocidadEnLaQueIbas = 135
+let velociadLimite = 60
+if (velocidadEnLaQueIbas > velociadLimite){
+    console.log(` ¡Has exedido el límite de velocidad!\n la velocidad límite es de ${velociadLimite} km/h\n tu velocidad es de ${velocidadEnLaQueIbas} km/h, baje la velocidad`);
+}else{
+    console.log(`Tu velocidad es de ${velocidadEnLaQueIbas} km/h, es ideal.`);
+}
 
 /* 4. Dado un sueldo, crear una condicional comparando su sueldo.
 - Si el sueldo es $100.000 es excelente
