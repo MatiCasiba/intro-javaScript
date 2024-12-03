@@ -84,7 +84,7 @@ if (yearOfBirth > year){
 }
 ```
 
-# Ejercicio 6 
+## Ejercicio 6 
 Se pidió crear una tabla de multiplicación del 1 al 10, para este programa le pido un numero entero al usuario:
 ```sh
 let numero = parseInt(prompt('Ingrese un número: ')) # uso el parseInt para que lo que ingrese el usuario, me devuelva un entero
@@ -99,3 +99,14 @@ for (let i = 1; i <= 10; i++){
 ```
 * For (): let i = 1, es la inicialización, entonces si i(1) <=(menor o igual a) 10, irá incrementando el i (i++) --> i=1 -> i=2 -> i=3 ... asi hasta llegar al i=10.
 * let multiplicando: se encargará de realizar la cuenta de multiplicación.
+
+## Ejercicio 7
+Se pide que el usuario ingrese un número, y el programa se encargue de detectar si el número que se ingresó es par o impar. Lo resolví de la siguiente manera:
+```sh
+let num = Number(prompt('Ingrese el número que necesita saber si es un entero o no: '))
+if (num % 2 == 0) { # si el numero ingresado dividido 2 su resto da 0, entonces es un número par
+    console.log(`El número ingresado ${num}, es par`)
+}else{ # de lo contrario si el resto no da 0, el número es impar
+    console.log(`El número ingresado ${num}, es impar`)
+}
+```

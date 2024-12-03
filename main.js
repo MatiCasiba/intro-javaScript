@@ -81,9 +81,9 @@ let year = 2024
 let yearOfBirth = Number(prompt('Ingrese su año de nacimiento:'))
 let calculadorDeEdad = year - yearOfBirth
 if (yearOfBirth > year){
-    console.log(`El año ${yearOfBirth} que ingresaste, no es válida ya que estamos en 2024, ingrese otro año.`);
+    console.log(`El año ${yearOfBirth} que ingresaste, no es válida ya que estamos en 2024, ingrese otro año.`)
 }else{
-    console.log(`Tu edad es de ${calculadorDeEdad} años`);
+    console.log(`Tu edad es de ${calculadorDeEdad} años`)
 }
 
 /* 6. Crear una función en JavaScript que reciba como parámetro un número entero. Calcule y muestre en la consola la tabla de multiplicar de ese número desde 1 hasta 10.*/
@@ -94,9 +94,18 @@ let numero = parseInt(prompt('Ingrese un número: '))
 console.log(`Tabla del ${numero}:`)
 for (let i = 1; i <= 10; i++){
     let multiplicando = numero * i
-    console.log(`${numero} x ${i} = ${multiplicando}`);  
+    console.log(`${numero} x ${i} = ${multiplicando}`)  
 }
 
 /* 7. Crea una función que devuelva si un número (pasado por el usuario es par o impar)
 Muestra el resultado por consola y un alert.
  */
+console.log('---------------------------------------------------------------')
+console.log('---------------------------------------------------------------')
+
+let num = Number(prompt('Ingrese el número que necesita saber si es un entero o no: '))
+if (num % 2 == 0) {
+    console.log(`El número ingresado ${num}, es par`)
+}else{
+    console.log(`El número ingresado ${num}, es impar`)
+}
