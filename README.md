@@ -71,7 +71,7 @@ if (sueldo <= 40000){
 
 ## Ejercicio 5 
 Se pido crear un programa que calcule la cantidad de años que tienes (osea tu edad), para cumplir con lo pedido, lo hice de la siguiente forma:
-````sh
+```sh
 let year = 2024 # año actual
 let yearOfBirth = Number(prompt('Ingrese su año de nacimiento:')) # el usuario ingresará el año en que nació
 let calculadorDeEdad = year - yearOfBirth # entonces restaremos al año actual menos el año ingresado.
@@ -83,3 +83,19 @@ if (yearOfBirth > year){
     console.log(`Tu edad es de ${calculadorDeEdad} años`);
 }
 ```
+
+# Ejercicio 6 
+Se pidió crear una tabla de multiplicación del 1 al 10, para este programa le pido un numero entero al usuario:
+```sh
+let numero = parseInt(prompt('Ingrese un número: ')) # uso el parseInt para que lo que ingrese el usuario, me devuelva un entero
+console.log(`Tabla del ${numero}:`) # mostrará en consola un mensaje con el numero ingresado
+```
+Utilizo un ciclo for para comenzar desde el 1 y terminar en el 10:
+```sh
+for (let i = 1; i <= 10; i++){
+    let multiplicando = numero * i # los i que van aumentando hasta 10, se multiplicarán con el número ingresado, ej: 9*1, 9*2, 9*3...9*10
+    console.log(`${numero} x ${i} = ${multiplicando}`);  
+}
+```
+* For (): let i = 1, es la inicialización, entonces si i(1) <=(menor o igual a) 10, irá incrementando el i (i++) --> i=1 -> i=2 -> i=3 ... asi hasta llegar al i=10.
+* let multiplicando: se encargará de realizar la cuenta de multiplicación.

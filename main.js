@@ -87,6 +87,15 @@ if (yearOfBirth > year){
 }
 
 /* 6. Crear una función en JavaScript que reciba como parámetro un número entero. Calcule y muestre en la consola la tabla de multiplicar de ese número desde 1 hasta 10.*/
+console.log('---------------------------------------------------------------')
+console.log('---------------------------------------------------------------')
+
+let numero = parseInt(prompt('Ingrese un número: '))
+console.log(`Tabla del ${numero}:`)
+for (let i = 1; i <= 10; i++){
+    let multiplicando = numero * i
+    console.log(`${numero} x ${i} = ${multiplicando}`);  
+}
 
 /* 7. Crea una función que devuelva si un número (pasado por el usuario es par o impar)
 Muestra el resultado por consola y un alert.
